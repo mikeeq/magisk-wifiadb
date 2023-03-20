@@ -12,7 +12,7 @@ until [ $(getprop sys.boot_completed) -eq 1 ] ; do
   sleep 5
 done
 
-setprop service.adb.tcp.port 5555
+setprop adb.network.port 5555
 stop adbd
 start adbd
 )&
